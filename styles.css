@@ -1,0 +1,44 @@
+/* General styling */
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 1em;
+}
+
+/* Callouts */
+.callout {
+  border-left-width: 4px;
+  border-radius: 4px;
+  margin: 1.5em 0;
+}
+
+/* Language sections */
+.language-section {
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Logo animations */
+.logo-container img {
+  transition: transform 0.2s;
+}
+
+.logo-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
