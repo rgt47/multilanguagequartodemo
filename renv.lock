@@ -50,6 +50,36 @@
       "Version": "1.1.5",
       "Source": "Repository",
       "Repository": "CRAN"
+    },
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.1.4",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "ggplot2": {
+      "Package": "ggplot2",
+      "Version": "4.0.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "JuliaCall": {
+      "Package": "JuliaCall",
+      "Version": "0.17.6",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "reticulate": {
+      "Package": "reticulate",
+      "Version": "1.44.1",
+      "Source": "Repository",
+      "Repository": "CRAN"
+    },
+    "scales": {
+      "Package": "scales",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN"
     }
   }
 }
