@@ -101,7 +101,7 @@ The following considerations motivated this exploration:
 Errors and better approaches are welcome; see the Feedback
 section at the end.
 
-![A workspace ready for multi-language exploration.](media/images/placeholder-coffee-03.jpg){.img-fluid}
+![A workspace ready for multi-language exploration.](media/images/ambiance1.png){.img-fluid}
 
 # Prerequisites and Setup
 
