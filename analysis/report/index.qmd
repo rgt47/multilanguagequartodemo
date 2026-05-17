@@ -1,8 +1,5 @@
 ---
 title: "Setting Up Multi-Language Quarto Documents on macOS"
-subtitle: >
-  Configuring R, Python, Julia, and Observable JS
-  to coexist in a single rendered document
 author: "Ronald 'Ryy' G. Thomas"
 date: today
 draft: false
@@ -26,7 +23,7 @@ format:
 
 ![Quarto logo: the open-source publishing system that
 ties multiple languages together in a single
-document.](media/images/hero.jpg){.img-fluid width=80%}
+document.](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
 *Quarto provides a unified authoring framework for
 scientific and technical publishing.*
