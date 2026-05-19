@@ -48,10 +48,10 @@ Observable JS runs natively in the browser. Small
 misconfigurations in any layer can cascade into cryptic
 errors.
 
-This post documents the lessons learned getting all four
+We document here the lessons learned getting all four
 languages to cooperate in a single Quarto document on
-macOS, written from the perspective of working through the
-process rather than having mastered it.
+macOS, written from the perspective of working through
+the process rather than having mastered it.
 
 More formally, this post documents the polyglot capability of
 the Document layer of the Workflow Construct described in
@@ -102,8 +102,8 @@ section at the end.
 
 # Prerequisites and Setup
 
-Before starting, make sure you have the following
-available on your macOS system:
+Before starting, the following should be available
+on the macOS system:
 
 - **macOS** (tested on Monterey and later)
 - **At least 8 GB RAM** (each language runtime consumes
@@ -114,26 +114,25 @@ available on your macOS system:
 
 **Background.** This guide assumes familiarity with the
 macOS Terminal and basic comfort installing software from
-the command line. You do not need prior experience with
-all four languages --- that is the whole point.
+the command line. Prior experience with all four languages
+is not required; that is the whole point.
 
 # What is Multi-Language Quarto?
 
 Quarto is an open-source scientific publishing system
 that extends the idea behind R Markdown to multiple
-languages. A single `.qmd` file can contain code chunks
-written in R, Python, Julia, and Observable JS. When you
-render the document, Quarto routes each chunk to the
-appropriate language engine, collects the output, and
-weaves everything into a unified HTML, PDF, or Word
-document.
+languages. A single `.qmd` file can contain code chunks written in
+R, Python, Julia, and Observable JS. When the document
+is rendered, Quarto routes each chunk to the appropriate
+language engine, collects the output, and weaves
+everything into a unified HTML, PDF, or Word document.
 
 The key insight is that R acts as the orchestration
 layer. Python chunks are executed through the reticulate
 package, Julia chunks through JuliaCall, and Observable
-JS chunks run natively in the browser when producing HTML
-output. This means your R installation needs to know
-where Python and Julia live on your system, and each
+JS chunks run natively in the browser when producing
+HTML output. This means the R installation needs to know
+where Python and Julia live on the system, and each
 language needs its own packages installed separately.
 
 # Getting Started: Basic Setup
@@ -396,7 +395,7 @@ The R version uses ggplot2 with a colorblind-friendly
 palette. The `geom_smooth()` layer adds per-species
 trend lines that reveal Simpson's paradox: the overall
 negative correlation between bill length and depth
-reverses when you condition on species.
+reverses when one conditions on species.
 
 ### Visualization in Python (Seaborn)
 
@@ -548,9 +547,9 @@ os.getcwd()
 pwd()
 ```
 
-If any of these return different directories, you will
-get "file not found" errors when one language tries to
-read data written by another.
+If any of these return different directories, the other
+will produce "file not found" errors when it attempts to
+read data written by the first.
 
 ## Memory Monitoring
 
@@ -578,9 +577,10 @@ psutil.Process().memory_info().rss / 1024 / 1024
    like the session has frozen. Be patient.
 
 3. **Observable JS is HTML-only.** Observable chunks do
-   not execute when rendering to PDF or Word. If you
-   need all four languages in PDF output, you will need
-   a different approach for the JavaScript visualizations.
+   not execute when rendering to PDF or Word. If all four
+   languages are needed in PDF output, a different
+   approach for the JavaScript visualizations will be
+   required.
 
 4. **Working directory drift.** Each language engine may
    start in a slightly different working directory. Use
@@ -738,20 +738,23 @@ four separate scripts and manual assembly.
 For those starting from scratch, the strongest
 recommendation is to verify each language independently
 before combining them. Debugging a four-language pipeline
-is exponentially harder than debugging a single-language
-problem.
+is appreciably harder than debugging a single-language
+problem, and the extra verification step is worth the
+investment.
 
-Main takeaways:
-
-- R orchestrates the other languages through reticulate
-  (Python) and JuliaCall (Julia); Observable JS is
-  browser-native.
-- Verify each language integration independently before
-  combining them in a single document.
-- Use CSV as the common data exchange format between
-  languages for maximum compatibility.
-- Budget extra time for first-run compilations (Julia)
-  and PATH configuration (Python) on macOS.
+In conclusion, four points merit emphasis. First, R
+orchestrates the other languages through reticulate
+(Python) and JuliaCall (Julia), while Observable JS
+runs independently in the browser; understanding this
+topology is prerequisite to diagnosing any configuration
+failure. Second, each language integration should be
+verified independently before combining them in a single
+document. Third, CSV is the most reliable common data
+exchange format between languages; binary formats do not
+cross language boundaries. Fourth, one should budget
+extra time for first-run Julia compilations and PATH
+configuration for Python on macOS, both of which can
+appear to freeze the session but resolve with patience.
 
 # See Also
 
