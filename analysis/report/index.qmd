@@ -8,7 +8,7 @@ description: >
   required to render a multi-language Quarto document
   from scratch on macOS.
 categories: [quarto, r, python, julia]
-image: "media/images/hero.jpg"
+image: "media/images/hero.png"
 document-type: "blog"
 execute:
   echo: true
@@ -25,7 +25,7 @@ cluster-order: 1
 
 ![Quarto logo: the open-source publishing system that
 ties multiple languages together in a single
-document.](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
+document.](media/images/hero.png){.img-fluid width=80% fig-align="center"}
 
 *Quarto provides a unified authoring framework for
 scientific and technical publishing.*
