@@ -2,7 +2,7 @@
 title: "Setting Up Multi-Language Quarto Documents on macOS"
 author: "Ronald 'Ryy' G. Thomas"
 date: today
-draft: false
+draft: true
 description: >
   A practical guide to the configuration plumbing
   required to render a multi-language Quarto document
@@ -630,7 +630,7 @@ R and RStudio remain functional without any of the above.
 
 ![UCSD Geisel Library: a reminder that good
 documentation, like good architecture, requires careful
-structural planning.](media/images/ambiance3.jpg)
+structural planning.](media/images/ambiance3.png)
 {.img-fluid}
 
 *The best technical configurations, like the best
