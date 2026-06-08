@@ -1,6 +1,6 @@
 ---
 title: "Setting Up Multi-Language Quarto Documents on macOS"
-author: "Ronald 'Ryy' G. Thomas"
+author: "Ronald G. Thomas"
 date: today
 draft: false
 description: >
