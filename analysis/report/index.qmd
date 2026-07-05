@@ -2,7 +2,7 @@
 title: "Setting Up Multi-Language Quarto Documents on macOS"
 author: "Ronald G. Thomas"
 date: today
-draft: false
+draft: true
 description: >
   A practical guide to the configuration plumbing
   required to render a multi-language Quarto document
