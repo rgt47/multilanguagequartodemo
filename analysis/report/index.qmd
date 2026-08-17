@@ -2,14 +2,11 @@
 title: "Setting Up Multi-Language Quarto Documents on macOS"
 author: "Ronald G. Thomas"
 date: today
-draft: true
-description: >
-  A practical guide to the configuration plumbing
-  required to render a multi-language Quarto document
-  from scratch on macOS.
 categories: [quarto, r, python, julia]
+description: "A practical guide to the configuration plumbing required to render a multi-language Quarto document from scratch on macOS."
 image: "media/images/hero.png"
 document-type: "blog"
+draft: true
 execute:
   echo: true
   eval: false
@@ -95,7 +92,7 @@ The following considerations motivated this exploration:
 Errors and better approaches are welcome; see the Feedback
 section at the end.
 
-![A workspace ready for multi-language exploration.](media/images/ambiance1.png){.img-fluid}
+![A workspace ready for multi-language exploration.](media/images/ambiance1.png){.img-fluid height=3.5in}
 
 # Prerequisites and Setup
 
@@ -255,7 +252,7 @@ when you build to HTML.
 
 ![Python logo: the second language engine in the
 multi-language Quarto
-setup.](media/images/ambiance2.png){.img-fluid}
+setup.](media/images/ambiance2.png){.img-fluid height=3.5in}
 
 *Python integration through reticulate is often the first
 multi-language feature Quarto users encounter.*
