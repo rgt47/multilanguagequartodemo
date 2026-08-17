@@ -14,11 +14,6 @@ execute:
   echo: true
   eval: false
   python.reticulate: false
-format:
-  html:
-    toc: true
-    toc-depth: 3
-    code-fold: true
 cluster: publishing
 cluster-order: 1
 ---
