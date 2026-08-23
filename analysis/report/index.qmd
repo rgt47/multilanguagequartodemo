@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Multi-Language Quarto Documents on macOS"
 author: "Ronald G. Thomas"
-date: today
+date: "2026-05-01"
 categories: [quarto, r, python, julia]
 description: "A practical guide to the configuration plumbing required to render a multi-language Quarto document from scratch on macOS."
 image: "media/images/hero.png"
