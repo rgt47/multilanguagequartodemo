@@ -49,7 +49,7 @@ the process rather than having mastered it.
 
 More formally, this post documents the polyglot capability of
 the Document layer of the Workflow Construct described in
-[post 52](/posts/52-workflow-construct/). Quarto is the
+[A Workflow Construct for the Modern Data Scientist](../wf-construct-overview-anchor/). Quarto is the
 construct's recommended document layer, subsuming the roles
 previously divided between R Markdown, Jupyter, and standalone
 LaTeX. This post addresses the specific case in which a single
