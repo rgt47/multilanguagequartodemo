@@ -92,7 +92,7 @@ The following considerations motivated this exploration:
 Errors and better approaches are welcome; see the Feedback
 section at the end.
 
-![A workspace ready for multi-language exploration.](media/images/ambiance1.png){.img-fluid height=3.5in}
+![A row of four differently-shaped vintage keys hanging on a single pegboard: several languages, one shared board.](media/images/ambiance1.jpg){.img-fluid height=3.5in}
 
 # Prerequisites and Setup
 
@@ -250,9 +250,9 @@ dependencies:
 That is it. Observable chunks will render automatically
 when you build to HTML.
 
-![Python logo: the second language engine in the
-multi-language Quarto
-setup.](media/images/ambiance2.png){.img-fluid height=3.5in}
+![A small pile of foreign-currency coins from several
+different countries: distinct languages exchanged into
+one common output.](media/images/ambiance2.jpg){.img-fluid height=3.5in}
 
 *Python integration through reticulate is often the first
 multi-language feature Quarto users encounter.*

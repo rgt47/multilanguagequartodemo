@@ -1,5 +1,21 @@
 # Image attributions
 
+## Status (2026-08-25)
+
+`ambiance1.jpg` and `ambiance2.jpg` are genuine Gemini generations as
+of 2026-08-25 (generated via the `gemini-image-generator` tool),
+replacing the R logo and Python logo (wrong software-logo assets) that
+were previously in these slots.
+
+- `ambiance1.jpg`: a row of four differently-shaped vintage keys on a
+  pegboard. Metaphor: several languages, one shared board.
+- `ambiance2.jpg`: a small pile of foreign-currency coins from several
+  countries. Metaphor: distinct languages exchanged into one common
+  output.
+
+Both processed via `magick -resize 1600x -strip -quality 85` to
+1600x873.
+
 ## Placeholder coffee images (temporary ambiance slots)
 
 These images are shared placeholders used across all posts until replaced
