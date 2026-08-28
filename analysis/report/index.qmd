@@ -630,7 +630,7 @@ libraries, are built on solid foundations.*
 
 # What Did We Learn?
 
-## Lessons Learnt
+## Lessons Learned
 
 **Conceptual Understanding:**
 
@@ -676,7 +676,7 @@ libraries, are built on solid foundations.*
 
 - This guide was tested on macOS only. Linux and Windows
   setups involve different PATH configurations and
-  installer behaviours.
+  installer behaviors.
 - Julia integration through JuliaCall is less mature than
   Python integration through reticulate. Some Julia
   features may not work inside Quarto chunks.
