@@ -6,7 +6,7 @@ categories: [quarto, r, python, julia]
 description: "A practical guide to the configuration plumbing required to render a multi-language Quarto document from scratch on macOS."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   eval: false
